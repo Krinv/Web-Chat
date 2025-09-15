@@ -34,7 +34,7 @@
 
 ## 涉及
 
-Java、Servlet、Jquery
+Java、Servlet、Jquery、Tomcat
 
 Html、Css、JavaScript、Swiper
 
