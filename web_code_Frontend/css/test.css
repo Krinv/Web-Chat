@@ -1,0 +1,22 @@
+body{
+    background-image: url('../img/chat_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*依据html根元素大小设定*/
+    width: 100%; /* 保证缩放后元素不会裁剪 */
+    height: 100%; /* 保证缩放后高度也正确 */
+    color: #fff;
+
+    /* 布局 */
+    display: flex;
+    justify-content: center;/*水平*/
+    align-items: center;/*垂直*/
+}
+
+/*大盒子*/
+.big-box{
+    
+}
+
+/* 左侧边导航栏 */

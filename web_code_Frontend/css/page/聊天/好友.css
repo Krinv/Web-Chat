@@ -1,0 +1,261 @@
+/* 我的好友页面样式 */
+
+/* 我的好友大盒子 */
+#friend-big-box{
+    position: relative;
+    display: flex;
+    background-color:#fff;
+    overflow: hidden;
+}
+
+/*好友列表盒*/
+#friend-big-box .friend-index-box{
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+}
+
+/* 好友列表标题 */
+#friend-big-box .friend-index-box .friend-index-title{
+    height: 45px;
+    background-color: #fff;
+    text-align: start;
+
+    line-height: 3.5;
+    color: #6d6d6d;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1.5px solid #e1dcdc ;
+    border-top-left-radius: 5px;
+}
+
+/* 朋友列表容器 */
+#friend-big-box .friend-index-box .friend-list-box{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    height: 880px;
+    box-sizing: border-box;
+
+}
+
+/* 朋友列表项 */
+#friend-big-box .friend-index-box .friend-list-box .a-friend-box{
+    display: flex;
+    background-color:#fff;
+    color: #000;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100px;
+    cursor: pointer;
+    margin: 0;
+    padding-left:30px ;
+    position: relative;
+
+    border-bottom: 2px solid #e1dce1;
+}
+#friend-big-box .friend-index-box .friend-list-box .a-friend-box:hover
+{
+    background-color:#808080;
+}
+/* 朋友头像 */
+#friend-big-box .friend-index-box .friend-list-box .a-friend-box .friend-img
+{
+    display: block;
+    background-image: url('../img/login-bgc.jpg');
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    border-radius: 50%;
+}
+
+/* vip */
+#friend-big-box .friend-index-box .friend-list-box .a-friend-box .friend-img .vip-display
+{
+    position: absolute;
+    right: 2px;
+    bottom: -5px;
+    transition: all 1s;
+}
+
+/* 朋友信息 */
+#friend-big-box .friend-index-box .friend-list-box .a-friend-box .friend-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* 朋友名 */
+#friend-big-box .friend-index-box .friend-list-box .a-friend-box .friend-info .friend-name{
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* 用户名文本 */
+#friend-big-box .friend-index-box .friend-list-box .a-friend-box .friend-info .friend-name .user-name
+{
+    background-color: #e1dcdc;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: auto;
+}
+/* 用户vip文本 */
+#friend-big-box .friend-index-box .friend-list-box .a-friend-box .friend-info .friend-name .vip-name
+{
+
+    background-color: antiquewhite;
+    font-size: 10px;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+/* 激活 */
+#friend-big-box .friend-index-box .friend-list-box .active
+{
+    background: rgb(228,229,230);
+}
+
+
+
+/*子盒调整边界*/
+#friend-big-box .friend-resizer{
+    position: absolute;
+    display: inline-block;
+    cursor: ew-resize; /* 改变鼠标样式为水平拖动 */
+    width: 3px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    user-select: none;  /* 防止选择文本 */
+    z-index: 1;
+    left: 40%;
+}
+
+/*好友信息盒*/
+#friend-big-box .friend-info-box{
+    display: none;
+    flex-direction: column;
+    background-color: #e2dfdf;
+    height: 100%;
+    width: 70%;
+}
+
+/* 介绍信息节 */
+#friend-big-box .friend-info-box .friend-introduction-section{
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    
+    width: 100%;
+    height: 80%;
+}
+
+/* 介绍-头像 */
+#friend-big-box .friend-info-box .friend-introduction-section .f-intro-avatar{
+    
+    margin-top: 100px;
+    
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    overflow: hidden; /* 确保多余部分被隐藏 */
+    
+    /* 如果是 <img> 标签，添加以下属性以确保图片覆盖容器 */
+    display: block;
+}
+
+
+/* 介绍-文本盒 */
+#friend-big-box .friend-info-box .friend-introduction-section .f-intro-content
+{
+    color: black;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    height: 45%;
+
+    font-size: 50px;
+}
+
+/* 介绍-文本-名字 */
+#friend-big-box .friend-info-box .friend-introduction-section .f-intro-content .f-intro-name-box
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 介绍-文本-亲密度 */
+#friend-big-box .friend-info-box .friend-introduction-section .f-intro-content .f-intro-intimacy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap:15px
+}
+
+#friend-big-box .friend-info-box .friend-introduction-section .f-intro-content .f-intro-intimacy button{
+    height: 30px;
+}
+
+#friend-big-box .friend-info-box .friend-introduction-section .f-intro-content .f-intro-intimacy .introduction-intimacy{
+    
+}
+
+/* 介绍-文本-vip */
+#friend-big-box .friend-info-box .friend-introduction-section .f-intro-content .f-intro-vip{
+
+}
+
+/* 功能按钮节 */
+#friend-big-box .friend-info-box .friend-buttons-section{
+
+    border-top: 1px solid black;
+
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+/* 按钮样式*/
+#friend-big-box .friend-info-box .friend-buttons-section button{
+    font-size: 30px;
+
+    width: 200px;
+    height: 70px;
+}

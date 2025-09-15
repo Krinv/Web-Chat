@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="./css/登录.css">
+
+    
+</head>
+<body>
+    <form action="" class="login-box" method="post">
+        <!-- 切换按钮 -->
+        <div class="select-box">
+            <div class="wechat-btn">
+                微信登陆
+            </div>
+            <div class="move-line">
+                ————
+            </div>
+            <div class="default-btn">
+                密码登录
+            </div>
+        
+        </div>
+
+        <div class="wechat-login" style="display: none;" >
+
+        </div>
+        <div class="default-login">
+            账号<input type="text" maxlength="12" class="user-id" placeholder="请输入6到12位数字"> <br>
+
+            <div class="alert user-id-alert">格式错误</div>
+
+            密码<input type="text" maxlength="12" class="password" placeholder="12位数字字母组合+.-*/%&!@#">  <br>
+
+            <div class="alert password-alert">密码错误</div>
+            
+            <div class="login-box-bottom">
+                <input type="submit" class="submit" value="登录">
+                <a href="./注册.html" class="to-register">还没有账号？点击注册</a>
+            </div>
+        </div>
+        
+
+    </form>
+    
+
+    <script>
+        document.querySelector('form').addEventListener('submit',function(e)
+        {
+            e.preventDefault()
+        })
+    </script>
+
+
+
+    <script src="./js/comond/服务重定向.js"></script>
+    <script src="./js/登录/正则表达.js"></script>
+    <script src="./js/登录/输入格式判断.js"></script>
+    <script src="./js/登录/切换登录方式.js"></script>
+    <script src="./js/登录/登录发送.js"></script>
+
+</body>
+</html>

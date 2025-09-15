@@ -1,0 +1,101 @@
+#search-big-box 
+{
+
+}
+#search-big-box .search-box
+{
+    width: 1000px;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 20px 0 0 40px ;
+   
+}
+/* 搜索框 */
+#search-big-box .search-box .search-friend-input
+{
+    outline: none;
+    height: 50px;
+    width: 800px;
+    background: #c7c7c7;
+    border: none;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0 ;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* 搜索框隐藏界面 */
+#search-big-box .search-box .search-friend-input-add
+{
+    display: flex;
+    background: #ffffff;
+    width: 800px;
+    list-style: none;
+    margin: 0;
+    color: #676363;
+    font-size: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 925px;
+
+
+}
+#search-big-box .search-box .search-friend-input-add::-webkit-scrollbar {
+    display: none; 
+}
+#search-big-box .search-box .search-friend-input-add li
+{
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 0;
+    background:  #c7c7c7;
+}
+#search-big-box .search-box .search-friend-input-add li:hover
+{
+    background:  #9b9b9b;
+}
+#search-big-box .search-box .search-friend-input-add li .user-info
+{
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+}
+#search-big-box .search-box .search-friend-input-add .user-img
+{
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+#search-big-box .search-box .search-friend-input-add .user-name
+{
+
+}
+
+#search-big-box .search-box .search-friend-input-add .add-friend
+{
+    background: #d98e0c;
+    color: #f8f8f8;
+    cursor: pointer;
+    justify-self: end;
+    border-radius: 10px;
+    line-height: 2;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#search-big-box .search-box .search-friend-input-add .add-friend:hover
+{
+    background: #d03333;
+}

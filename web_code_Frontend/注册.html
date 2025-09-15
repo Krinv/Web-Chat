@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/注册.css">
+</head>
+<body>
+    <register-box>
+        <form method="post" class="register-box">
+            
+            <span id="id">账号</span>
+            <input type="text" maxlength="12" class="user-id" placeholder="请输入6到12位数字"> <br>
+
+            <div class="alert user-id-alert">账号已存在</div>
+
+            密码<input type="password" maxlength="12" class="password" placeholder="12位数字字母组合+.-*/%&!@#" onblur="validatePassword(this)" onfocus="cleanAlert(this)">  <br>
+            
+            <div class="alert password-alert">密码格式错误</div>
+
+            再次输入密码<input type="password" maxlength="12" class="again-password" placeholder="12位数字字母组合+.-*/%&!@#" onblur="validatePassword(this)" onfocus="cleanAlert(this)">  <br>
+
+            <div class="alert again-password-alert">密码格式问题</div>
+            
+            <div class="register-box-bottom">
+                <input type="submit" class="submit" value="注册">
+                <a href="./登录.html" class="to-login">返回登录</a>
+            </div>
+        </form>
+    </register-box>
+
+    <script src="./js/comond/服务重定向.js"></script>
+    <script src="./js/注册/注册.js"></script>
+    <script src="./js/注册/注册发送.js"></script>
+</body>
+</html>
